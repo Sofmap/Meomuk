@@ -115,9 +115,9 @@ nav .fa-solid{
 }
 
 
-/* ----recipes---- */
+/* ----country---- */
 
-.recipes{
+.country{
   width: 80%;
   margin: auto;
   text-align: center;
@@ -139,8 +139,8 @@ p {
   display: flex;
   justify-content: space-between;
 }
-.recipes-col {
-  flex-basis: 18%;
+.country-col {
+  flex-basis: 20%;
   background: #ffffcf;
   border-radius: 10px;
   margin-bottom: 5%;
@@ -153,7 +153,7 @@ h3 {
   font-weight: 700;
   margin: 10px 0px;
 }
-.recipes-col:hover {
+.country-col:hover {
   box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
 }
 
@@ -161,4 +161,40 @@ h3 {
   .row {
     flex-direction: column;
   }
+}
+
+/* ------recipes----- */
+
+.recipes{
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+.recipes-col {
+  flex-basis: 22%;
+  height: 1200px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.4s;
+}
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.layer:hover {
+  background: rgba(0,0,0,0.3);
+}
+.recipes-col:hover {
+  transform: scale(1.1);
+}
+.recipes-col h3 {
+  color: white;
 }
