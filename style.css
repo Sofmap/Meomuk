@@ -165,7 +165,7 @@ h3 {
 
 /* ------recipes----- */
 
-.recipes{
+.recipes {
   width: 90%;
   margin: auto;
   text-align: center;
@@ -197,4 +197,11 @@ h3 {
 }
 .recipes-col h3 {
   color: white;
+}
+
+@media(max-width: 700px) {
+  .recipes-col img{
+    height: 400px;
+    width: 600px;
+  }
 }
