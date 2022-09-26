@@ -45,7 +45,7 @@ nav img{
   background: #ffff89;
   display: block;
   margin: auto;
-  transition: 0.7s;
+  transition: 0.6s;
 }
 .nav-links ul li:hover::after{
   width: 100%;
@@ -70,6 +70,7 @@ nav img{
 .hero-btn{
   display: inline-block;
   text-decoration: none;
+  width: 150px;
   color: #fff;
   border: 1px solid #fff;
   padding: 12px 34px;
@@ -174,9 +175,14 @@ h3 {
   text-align: center;
   padding-top: 50px;
 }
+.row2 {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
 .recipes-col {
   flex-basis: 22%;
-  height: 1000px;
+  height: 70vh;
   border-radius: 10px;
   margin-bottom: 50px;
   position: relative;
@@ -195,16 +201,59 @@ h3 {
 .layer:hover {
   background: rgba(0,0,0,0.3);
 }
+.layer h3{
+  width: 100%;
+  font-weight: 1000;
+  color: white;
+  font-size: 20px;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+.layer:hover h3 {
+  bottom: 50%;
+  opacity: 1;
+}
 .recipes-col:hover {
   transform: scale(1.1);
 }
-.recipes-col h3 {
-  color: white;
-}
 
 @media(max-width: 700px) {
-  .recipes-col img{
-    height: 400px;
-    width: 600px;
+  .row2 {
+    flex-direction: column;
+    height: 1000px;
   }
+}
+
+
+/* ------ photos ------- */
+.photos {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+
+/* ----------footer------------ */
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #7e7e7e;
+}
+.footer h4 {
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 1000;
+}
+.icons .fa-brands {
+  color: #eddc46;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 30px 0;
 }
